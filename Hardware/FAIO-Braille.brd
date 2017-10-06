@@ -584,10 +584,10 @@ design rules under a new name.</description>
 <contactref element="S2" pad="1"/>
 <contactref element="S1" pad="2"/>
 <contactref element="S2" pad="2"/>
-<via x="82.804" y="42.926" extent="1-16" drill="3.2" diameter="3.81"/>
-<via x="82.804" y="5.08" extent="1-16" drill="3.2" diameter="3.81"/>
-<via x="5.08" y="5.08" extent="1-16" drill="3.2" diameter="3.81"/>
-<via x="5.08" y="42.926" extent="1-16" drill="3.2" diameter="3.81"/>
+<via x="82.804" y="42.926" extent="1-16" drill="2.5" diameter="3.81"/>
+<via x="82.804" y="5.08" extent="1-16" drill="2.5" diameter="3.81"/>
+<via x="5.08" y="5.08" extent="1-16" drill="2.5" diameter="3.81"/>
+<via x="5.08" y="42.926" extent="1-16" drill="2.5" diameter="3.81"/>
 </signal>
 <signal name="+3V3">
 <contactref element="G3" pad="3"/>
