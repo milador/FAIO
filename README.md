@@ -13,8 +13,11 @@ Adaptive switches are the key components for many of those with physical disabil
 All the necessary information to create your own FAIO is provided in the github.
 
 *FAIO_BOM: Necessary Components 
+
 *Hardware: PCB and Housing design
+
 *Software: FAIO Software
+
 *FAIO_Instructions_Manual: Getting started and assembly instructions
 
 ## Updates 
