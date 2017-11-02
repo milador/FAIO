@@ -10,7 +10,7 @@
 /////////////////////////////////////
 
 #define MY_DEBUG 1
-#define MY_TEST 0  //Testing mode = 0 , Production mode = 1
+#define MY_TEST 1  //Testing mode = 0 , Production mode = 1
 
 #include "BluefruitRoutines.h"
 
@@ -209,32 +209,32 @@ char braillePad(int pin11, int pin12, int pin21, int pin22, int pin31, int pin32
     pin22=!pin22;
     pin31=!pin31;
     pin32=!pin32;    
-    if(pin11==1 && pin12==0 && pin21==0 && pin22==0 && pin31==0 && pin32==0) { brailleChar='A'; }
-    else if(pin11==1 && pin12==0 && pin21==1 && pin22==0 && pin31==0 && pin32==0) { brailleChar='B'; }
-    else if(pin11==1 && pin12==1 && pin21==0 && pin22==0 && pin31==0 && pin32==0) { brailleChar='C'; }
-    else if(pin11==1 && pin12==1 && pin21==0 && pin22==1 && pin31==0 && pin32==0) { brailleChar='D'; }
-    else if(pin11==1 && pin12==0 && pin21==0 && pin22==1 && pin31==0 && pin32==0) { brailleChar='E'; }
-    else if(pin11==1 && pin12==1 && pin21==1 && pin22==0 && pin31==0 && pin32==0) { brailleChar='F'; }
-    else if(pin11==1 && pin12==1 && pin21==1 && pin22==1 && pin31==0 && pin32==0) { brailleChar='G'; }
-    else if(pin11==1 && pin12==0 && pin21==1 && pin22==1 && pin31==0 && pin32==0) { brailleChar='H'; }
-    else if(pin11==0 && pin12==1 && pin21==1 && pin22==0 && pin31==0 && pin32==0) { brailleChar='I'; }
-    else if(pin11==0 && pin12==1 && pin21==1 && pin22==1 && pin31==0 && pin32==0) { brailleChar='J'; }
-    else if(pin11==1 && pin12==0 && pin21==0 && pin22==0 && pin31==1 && pin32==0) { brailleChar='K'; }
-    else if(pin11==1 && pin12==0 && pin21==1 && pin22==0 && pin31==1 && pin32==0) { brailleChar='L'; }
-    else if(pin11==1 && pin12==1 && pin21==0 && pin22==0 && pin31==1 && pin32==0) { brailleChar='M'; }
-    else if(pin11==1 && pin12==1 && pin21==0 && pin22==1 && pin31==1 && pin32==0) { brailleChar='N'; }
-    else if(pin11==1 && pin12==0 && pin21==0 && pin22==1 && pin31==1 && pin32==0) { brailleChar='O'; }
-    else if(pin11==1 && pin12==1 && pin21==1 && pin22==0 && pin31==1 && pin32==0) { brailleChar='P'; }
-    else if(pin11==1 && pin12==1 && pin21==1 && pin22==1 && pin31==1 && pin32==0) { brailleChar='Q'; }
-    else if(pin11==1 && pin12==0 && pin21==1 && pin22==1 && pin31==1 && pin32==0) { brailleChar='R'; }
-    else if(pin11==0 && pin12==1 && pin21==1 && pin22==0 && pin31==1 && pin32==0) { brailleChar='S'; }     
-    else if(pin11==0 && pin12==1 && pin21==1 && pin22==1 && pin31==1 && pin32==0) { brailleChar='T'; }
-    else if(pin11==1 && pin12==0 && pin21==0 && pin22==0 && pin31==1 && pin32==1) { brailleChar='U'; }
-    else if(pin11==1 && pin12==0 && pin21==1 && pin22==0 && pin31==1 && pin32==1) { brailleChar='V'; }
-    else if(pin11==0 && pin12==1 && pin21==1 && pin22==1 && pin31==0 && pin32==1) { brailleChar='W'; }
-    else if(pin11==1 && pin12==1 && pin21==0 && pin22==0 && pin31==1 && pin32==1) { brailleChar='X'; }
-    else if(pin11==1 && pin12==1 && pin21==0 && pin22==1 && pin31==1 && pin32==1) { brailleChar='Y'; }
-    else if(pin11==1 && pin12==0 && pin21==0 && pin22==1 && pin31==1 && pin32==1) { brailleChar='Z'; }
+    if(pin11==1 && pin12==0 && pin21==0 && pin22==0 && pin31==0 && pin32==0) { brailleChar='a'; }
+    else if(pin11==1 && pin12==0 && pin21==1 && pin22==0 && pin31==0 && pin32==0) { brailleChar='b'; }
+    else if(pin11==1 && pin12==1 && pin21==0 && pin22==0 && pin31==0 && pin32==0) { brailleChar='c'; }
+    else if(pin11==1 && pin12==1 && pin21==0 && pin22==1 && pin31==0 && pin32==0) { brailleChar='d'; }
+    else if(pin11==1 && pin12==0 && pin21==0 && pin22==1 && pin31==0 && pin32==0) { brailleChar='e'; }
+    else if(pin11==1 && pin12==1 && pin21==1 && pin22==0 && pin31==0 && pin32==0) { brailleChar='f'; }
+    else if(pin11==1 && pin12==1 && pin21==1 && pin22==1 && pin31==0 && pin32==0) { brailleChar='g'; }
+    else if(pin11==1 && pin12==0 && pin21==1 && pin22==1 && pin31==0 && pin32==0) { brailleChar='h'; }
+    else if(pin11==0 && pin12==1 && pin21==1 && pin22==0 && pin31==0 && pin32==0) { brailleChar='i'; }
+    else if(pin11==0 && pin12==1 && pin21==1 && pin22==1 && pin31==0 && pin32==0) { brailleChar='j'; }
+    else if(pin11==1 && pin12==0 && pin21==0 && pin22==0 && pin31==1 && pin32==0) { brailleChar='k'; }
+    else if(pin11==1 && pin12==0 && pin21==1 && pin22==0 && pin31==1 && pin32==0) { brailleChar='l'; }
+    else if(pin11==1 && pin12==1 && pin21==0 && pin22==0 && pin31==1 && pin32==0) { brailleChar='m'; }
+    else if(pin11==1 && pin12==1 && pin21==0 && pin22==1 && pin31==1 && pin32==0) { brailleChar='n'; }
+    else if(pin11==1 && pin12==0 && pin21==0 && pin22==1 && pin31==1 && pin32==0) { brailleChar='o'; }
+    else if(pin11==1 && pin12==1 && pin21==1 && pin22==0 && pin31==1 && pin32==0) { brailleChar='p'; }
+    else if(pin11==1 && pin12==1 && pin21==1 && pin22==1 && pin31==1 && pin32==0) { brailleChar='q'; }
+    else if(pin11==1 && pin12==0 && pin21==1 && pin22==1 && pin31==1 && pin32==0) { brailleChar='r'; }
+    else if(pin11==0 && pin12==1 && pin21==1 && pin22==0 && pin31==1 && pin32==0) { brailleChar='s'; }     
+    else if(pin11==0 && pin12==1 && pin21==1 && pin22==1 && pin31==1 && pin32==0) { brailleChar='t'; }
+    else if(pin11==1 && pin12==0 && pin21==0 && pin22==0 && pin31==1 && pin32==1) { brailleChar='u'; }
+    else if(pin11==1 && pin12==0 && pin21==1 && pin22==0 && pin31==1 && pin32==1) { brailleChar='v'; }
+    else if(pin11==0 && pin12==1 && pin21==1 && pin22==1 && pin31==0 && pin32==1) { brailleChar='w'; }
+    else if(pin11==1 && pin12==1 && pin21==0 && pin22==0 && pin31==1 && pin32==1) { brailleChar='x'; }
+    else if(pin11==1 && pin12==1 && pin21==0 && pin22==1 && pin31==1 && pin32==1) { brailleChar='y'; }
+    else if(pin11==1 && pin12==0 && pin21==0 && pin22==1 && pin31==1 && pin32==1) { brailleChar='z'; }
     else if(pin11==0 && pin12==1 && pin21==0 && pin22==1 && pin31==1 && pin32==1) { brailleChar='#'; }
                
     return brailleChar;
@@ -257,9 +257,9 @@ void loop() {
     brailleButton31State = digitalRead(BRAILLE_BUTTON31_PIN);
     brailleButton32State = digitalRead(BRAILLE_BUTTON32_PIN);
 
-    (brailleButton11State && brailleButton12State && brailleButton21State && brailleButton22State && brailleButton31State && brailleButton32State)  ? braillePadEnabled=1 : braillePadEnabled=0;
-    (adaptiveSwitch1State) ? adaptiveSwitch1Enabled=1 : adaptiveSwitch1Enabled=0;
-    (adaptiveSwitch2State) ? adaptiveSwitch2Enabled=1 : adaptiveSwitch2Enabled=0;
+    //(brailleButton11State && brailleButton12State && brailleButton21State && brailleButton22State && brailleButton31State && brailleButton32State)  ? braillePadEnabled=1 : braillePadEnabled=0;
+    //(adaptiveSwitch1State) ? adaptiveSwitch1Enabled=1 : adaptiveSwitch1Enabled=0;
+    //(adaptiveSwitch2State) ? adaptiveSwitch2Enabled=1 : adaptiveSwitch2Enabled=0;
 
     
   //Testing mode
@@ -287,7 +287,7 @@ void loop() {
       {
         Serial.println("Send Adaptive Switch 1 Activation command.");
         ledBlink(1,100,LED1_PIN);
-        //pressKeyCode('1');
+        pressKeyCode('a');
         ledBlink(1,100,LED2_PIN);
       }
       
@@ -296,7 +296,7 @@ void loop() {
       {
         Serial.println("Send Adaptive Switch 2 Activation command.");
         ledBlink(1,100,LED1_PIN);
-        //pressKeyCode('2');
+        pressKeyCode('b');
         ledBlink(1,100,LED2_PIN);
       }
 
@@ -308,7 +308,7 @@ void loop() {
           //Sip Activation command
           ledBlink(1,100,LED1_PIN);
           Serial.println("Send Sip Activation command.");
-          //pressKeyCode('3');
+          pressKeyCode('c');
           ledBlink(1,100,LED2_PIN);
         }
         else if (sipPuffPressureValue<puffPressureThreshold) 
@@ -316,7 +316,7 @@ void loop() {
           //Puff Activation command
           ledBlink(1,100,LED1_PIN);
           Serial.println("Send Puff Activation command.");
-          //pressKeyCode('4');
+          pressKeyCode('d');
           ledBlink(1,100,LED2_PIN);
         }
         else
@@ -334,7 +334,7 @@ void loop() {
           ledBlink(2,100,LED1_PIN);
           Serial.print("Send Braille characters : ");
           Serial.println(braillePad(brailleButton11State,brailleButton12State,brailleButton21State,brailleButton22State,brailleButton31State,brailleButton32State));
-         //pressKeyCode(braillePad(brailleButton11State,brailleButton12State,brailleButton21State,brailleButton22State,brailleButton31State,brailleButton32State));
+          pressKeyCode(braillePad(brailleButton11State,brailleButton12State,brailleButton21State,brailleButton22State,brailleButton31State,brailleButton32State));
           ledBlink(2,100,LED2_PIN);
         }
       }     
