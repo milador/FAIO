@@ -33,8 +33,12 @@ void initializeBluefruit (void) {
     FATAL(F("err:enable Kb"));
   }
   //Add or remove service requires a reset
-  if (! ble.reset() ) {
-    FATAL(F("err:SW reset"));
+  if ( FACTORYRESET_ENABLE )
+  {
+    /* Perform a factory reset to make sure everything is in a known state */
+    if ( ! ble.factoryReset() ){
+      FATAL(F("err:SW reset"));
+    }
   }
 
 }

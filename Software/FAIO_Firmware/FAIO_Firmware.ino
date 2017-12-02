@@ -11,6 +11,7 @@
 
 #define MY_DEBUG 1
 #define MY_TEST 1  //Testing mode = 0 , Production mode = 1
+#define FACTORYRESET_ENABLE 0
 
 #include "BluefruitRoutines.h"
 
@@ -28,6 +29,7 @@
 
 #define LED1_PIN 11
 #define LED2_PIN 13
+
 
 // Variable Declaration 
 int adaptiveSwitch1State;
@@ -342,7 +344,7 @@ void loop() {
       {
         //Serial.println( F("FAILED!") );
       }
-      delay(500);
+      delay(50);
   }
 }
 
