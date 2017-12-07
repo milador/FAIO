@@ -279,7 +279,7 @@ void loop() {
     
     Serial.print("Sip Puff Switch Value = ");
     Serial.println(sipPuffPressureValue);
-    delay(500);
+    delay(50);
   }
   //Production mode
   else 
@@ -301,7 +301,6 @@ void loop() {
         pressKeyCode('b');
         ledBlink(1,100,LED2_PIN);
       }
-
       //Sip andvPuff Pressure Activation command
       if(sipPuffPressureEnabled)
       {
